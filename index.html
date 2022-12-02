@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Block</title>
+    <meta name="description" content="Window Dialog Box page">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+    <div class="window">
+        <div class="header">
+            <div class="title floatleft w100">Paragraph</div>
+            <div class="control w100 flex">
+                <button accesskey="h" aria-label="help"></button>
+                <button accesskey="x" aria-label="Close" class="mr2"></button>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="list flex" aria-label="Button list">
+                <li>
+                    <button aria-label="Indentation"><u>I</u>ndent
+                        and Spacing </button>
+
+                </li>
+                <li>
+                    <button aria-label="Line Page">Line and <u>P</u>age
+                        Breaks</button>
+                </li>
+            </ul>
+
+            <div class="field">
+                <div class="general pageshift floatleft">General</div>
+                <div class="alignment pageshift floatleft paddingopt ">
+                    <label for="alignment">Ali<u>g</u>nment:</label>
+                    <select accesskey="g" name="alignment" id="alignment" class="alignment-option w80 h20">
+                        <option value="Centered">Centered</option>
+                        <option value="left">Left</option>
+                        <option value="right">Right</option>
+                    </select>
+                </div>
+                <div class="outline pageshift floatleft paddingopt">
+                    <label for="outline"><u>O</u>utline level:</label>
+                    <select accesskey="o" name="outline" id="outline" class="outline-option w80 h20">
+                        <option value="bodytext">Body Text</option>
+                        <option value="level1">1em</option>
+                        <option value="level2">2em</option>
+                        <option value="level3">3em</option>
+                    </select>
+                </div><br>
+                <div class="indentation pageshift floatleft"> Indentation</div>
+                <div class="left-box floatleft">
+                    <div class="left pageshift">
+                        <label for="left"><u>L</u>eft:</label>
+                        <input accesskey="l" aria-label="Left level" type="number" min="0" max="10"
+                            class="left-margin w80 floatleft" value="1" id="left" />
+                    </div>
+                    <div class="right pageshift">
+                        <label for="right"><u>R</u>ight:</label>
+                        <input accesskey="r" aria-label="level" type="number" min="0" max="10"
+                            class="right-margin w80 floatleft" value="1" id="right" />
+                    </div>
+                </div>
+                <div class="right-box pageshift floatleft">
+                    <div class="special">
+                        <label for="special"><u>S</u>pecial:</label><br>
+                        <select accesskey="s" name="special" id="special"
+                            class="special-option pageshift floatleft paddingopt w100 h20 mt3">
+                            <option value="custom">Custom</option>
+                            <option value="autoright">Auto right</option>
+                            <option value="autoleft">Auto left</option>
+                            <option value="autocenter">Auto Center</option>
+                        </select>
+                    </div>
+                    <div class="By">
+                        <label for="By">B<u>y</u>:</label>
+                        <select accesskey="y" name="By" id="By" class="by-option pageshift w80 h20 mt3">
+                            <option value="bodytext">Custom</option>
+                            <option value="fromleft">Left</option>
+                            <option value="Fromright">Right</option>
+                            <option value="Fromcenter">Center</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="spacing pageshift floatleft">Spacing</div>
+                <div class="line-spacing">
+                    <div class="left-box floatleft">
+                        <div class="before pageshift floatleft">
+                            <label for="Before"><u>B</u>efore:</label>
+                            <input accesskey="b" aria-label="Before level" type="number" min="0" max="5"
+                                class="before-margin floatleft w80" value="1" id="Before" />
+                        </div>`
+                        <div class="after pageshift floatleft">
+                            <label for="After">Aft<u>e</u>r:</label>
+                            <input accesskey="e" aria-label="After level" type="number" min="0" max="5" id="After"
+                                class="after-margin floatleft w80 mt3" value="1" />
+                        </div>
+                    </div>
+                    <div class="right-box pageshift">
+                        <div class="line-spacing floatleft">
+                            <label for="line-spacing">Li<u>n</u>e Spacing:</label><br>
+                            <select accesskey="n" name="line-spacing" id="line-spacing"
+                                class="line-option pageshift floatleft paddingopt w100 h20 mt3">
+                                <option value="Single">Single</option>
+                                <option value="autoright">Auto right</option>
+                                <option value="autoleft">Auto left</option>
+                                <option value="autocenter">Auto Center</option>
+                            </select>
+                        </div>
+                        <div class="at">
+                            <label for="At"><u>A</u>t:</label>
+                            <select accesskey="a" name="At" id="At" class="at-option pageshift w80 h20">
+                                <option value="bodytext">Custom</option>
+                                <option value="fromleft">Left</option>
+                                <option value="Fromright">Right</option>
+                                <option value="Fromcenter">Center</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fadeline floatleft">
+                    <input type="checkbox" aria-label="don't add Paragraph" class="checkbox-option floatleft">
+                    <div class="checkline floatleft">Don't add space between paragraph of the same style</div>
+                </div>
+                <div class="preview pageshift floatleft">Preview</div>
+
+                <div class="blank pageshift">
+
+                    <div class="para floatleft">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Rerum fugiat perferendis natus nisi in. Doloribus quasi qui
+                            explicabo modi deserunt nobis, ducimus, facilis ipsam praesentium
+                            s numquam temporibus minima vitae nisi? <br>
+                            <br>______________________________<b id="color">More
+                                info</b>______________________________<br><br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Rerum fugiat perferendis natus nisi in. Doloribus quasi qui
+                            explicabo modi deserunt nobis, ducimus, facilis ipsam praesentium
+                            s numquam temporibus minima vitae nisi?
+                        </p>
+                    </div><br>
+
+                </div>
+            </div> <!-- end of field -->
+
+            <button accesskey="c" aria-label="Cancel" class="cancel w80"><u>C</u>ancel</button>
+            <button accesskey="k" aria-label="Submit" class="ok active w80">O<u>K</u></button>
+            <button accesskey="t" aria-label="Tab" class="floatleft tabs w80"><u>T</u>abs..</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
